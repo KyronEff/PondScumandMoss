@@ -11,6 +11,11 @@ body {
     color: #2b9111;
 }
 
+a,
+span {
+    -webkit-text-decoration: none;
+}
+
 /* sr-only for accessibility */
 .sr-only {
     position: absolute;
@@ -114,6 +119,20 @@ section[data-level="0"] h1 {
     user-select: text;
     z-index: 2;
 }
+
+#level_zero_key {
+    -webkit-touch-callout: none;
+    -webkit-user-select: text;
+    -webkit-text-size-adjust: none;
+    color: transparent;
+}
+
+a,
+span {
+    -webkit-text-decoration: none;
+    /* prevent underline/blue for auto links */
+}
+
 
 
 /* Glow for the key */
