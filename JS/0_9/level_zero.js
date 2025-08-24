@@ -24,7 +24,7 @@ placeKeyRandomly();
 // Check answer when Enter pressed
 levelZeroInput.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
-        if (levelZeroInput.value.toUpperCase() === key) {
+        if (levelZeroInput.value.trim().toUpperCase() === key) {
             // Smoothly fade out encrypted text
             levelZeroText.style.transition = "opacity 0.5s";
             levelZeroText.style.opacity = 0;
@@ -36,8 +36,6 @@ levelZeroInput.addEventListener("keydown", function (e) {
                 // Fade back in
                 levelZeroText.style.opacity = 1;
             }, 500);
-        } else {
-            alert("Incorrect, try again.");
         }
     }
 });
