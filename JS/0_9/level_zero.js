@@ -3,7 +3,7 @@ const levelZeroKey = document.getElementById("level_zero_key");
 const levelZeroInput = document.getElementById("level_zero_input");
 
 const encrypted = "BEDFAYIKMZEAYGK"; // hardcoded ciphered text
-const key = "01001101 01001111 01010011 01010011";
+const key = "MOSS";
 
 // Display the encrypted text
 levelZeroText.innerText = encrypted;
